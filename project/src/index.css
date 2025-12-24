@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary-light: #FFFDF6;
+  --color-primary: #FAF6E9;
+  --color-secondary: #DDEB9D;
+  --color-accent: #A0C878;
+  --color-text: #333333;
+  --color-text-light: #666666;
+  --color-success: #4ade80;
+  --color-warning: #fbbf24;
+  --color-error: #f87171;
+  --color-info: #60a5fa;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--color-primary-light);
+  color: var(--color-text);
+  margin: 0;
+  padding: 0;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.nutrify-container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.nutrify-btn-primary {
+  @apply bg-[#A0C878] hover:bg-[#8DB665] text-white font-medium py-2 px-4 rounded-md transition-all shadow-sm;
+}
+
+.nutrify-btn-secondary {
+  @apply bg-[#DDEB9D] hover:bg-[#CDD78B] text-[#4B5800] font-medium py-2 px-4 rounded-md transition-all shadow-sm;
+}
+
+.nutrify-btn-outline {
+  @apply border border-[#A0C878] text-[#A0C878] hover:bg-[#F3F9EA] font-medium py-2 px-4 rounded-md transition-all;
+}
+
+.nutrify-card {
+  @apply bg-white rounded-xl shadow-md p-6 transition-all hover:shadow-lg;
+}
+
+.page-transition {
+  @apply transition-opacity duration-300;
+}
+
+.page-transition-enter {
+  @apply opacity-0;
+}
+
+.page-transition-enter-active {
+  @apply opacity-100;
+}
+
+.page-transition-exit {
+  @apply opacity-100;
+}
+
+.page-transition-exit-active {
+  @apply opacity-0;
+}
